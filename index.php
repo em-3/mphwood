@@ -10,44 +10,11 @@
     </head>
     <body>
         <!-- Begin Nav -->
-        <nav class="navbar navbar-expand-md bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="imgs/logo.svg" alt="" height="75" class="d-inline-block align-text-center" aria-hidden="false">
-                    Miller Pacific Hardwoods
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="catalog.html">Catalog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav flex-row nav-social me-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i role="img" class="bi bi-facebook fs-5" aria-label="Facebook"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i role="img" class="bi bi-twitter fs-5" aria-label="Twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i role="img" class="bi bi-instagram fs-5" aria-label="Instagram"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i role="img" class="bi bi-youtube fs-5" aria-label="YouTube"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php
+        $active_page = basename(__FILE__);
+
+        include __DIR__ . "/includes/navigation.php";
+        ?>
         <!-- End Nav -->
         <!-- Begin Main Body -->
         <main>
@@ -147,73 +114,7 @@
         </main>
         <!-- End Main Body -->
         <!-- Begin Footer -->
-        <footer class="border">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-lg-6 mb-3">
-                                <h5>Miller Pacific Hardwoods</h5>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item mb-2">
-                                        <a href="#" class="nav-link active text-muted p-0" aria-current="page">Home</a>
-                                    </li>
-                                    <li class="nav-item mb-2">
-                                        <a href="catalog.html" class="nav-link text-muted p-0">Catalog</a>
-                                    </li>
-                                    <li class="nav-item mb-2">
-                                        <a href="blog.html" class="nav-link text-muted p-0">Blog</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <h5>Contact Us</h5>
-                                <address>
-                                    <strong>Miller Pacific Hardwoods</strong>
-                                    <br>
-                                    685 NW Maple Way
-                                    <br>
-                                    Stevenson, WA 98648
-                                </address>
-                                <address>
-                                    <strong>Email</strong>
-                                    <br>
-                                    <a class="link-primary" href="mailto:contact@mphwood.com">contact@mphwood.com</a>
-                                </address>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 offset-md-1 mb-3">
-                        <form class="mb-3">
-                            <h5>Check out our mailing list!</h5>
-                            <p>Subscribe to our newsletter for information about new stock, ongoing projects, and more!</p>
-                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="email" class="visually-hidden">Email address</label>
-                            <input id="email" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                            </div>
-                        </form>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-facebook fs-5"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-twitter fs-5"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-instagram fs-5"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-youtube fs-5"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="py-4 my-4 border-top">
-                    <p>© 2022 Miller Pacific Hardwoods, LLC. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+        <?php include __DIR__ . "/includes/footer.html"; ?>
         <!-- End Footer -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
