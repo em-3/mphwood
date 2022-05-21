@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-md bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand text-wrap overflow-hidden" href="#">
             <img src="imgs/logo.svg" alt="" height="75" class="d-inline-block align-text-center" aria-hidden="false">
-            Miller Pacific Hardwoods
+            <span class="text-nowrap">Miller Pacific Hardwoods</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,6 @@
                 $nav_items = [
                     "Home" => "index.php",
                     "Catalog" => "catalog.php",
-                    "Blog" => "blog.php",
                     "About" => "about.php"
                 ];
 
