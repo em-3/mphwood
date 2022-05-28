@@ -75,40 +75,13 @@
                 </div>
             </div>
             <div class="container my-5">
-                <h2 class="display-4">Blog</h2>
-                <p class="lead">Check out our latest news and info.</p>
-                <p><a href="blog.html" class="btn btn-primary">See more articles</a></p>
-                <div class="row p-3 g-3 g-lg-5 text-center">
-                    <div class="col-md-4">
-                        <div class="card shadow h-100">
-                            <img class="card-img-top" src="imgs/cutting-board-resized.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">More Cutting Boards in Stock!</h5>
-                                <p class="card-text">We have 30 more cutting boards in stock! Come and check them out today! ...</p>
-                                <a href="article.php" class="btn btn-primary">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow h-100">
-                            <img class="card-img-top" src="imgs/fig-5-7-resized.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">New 5-7 Fig in Stock</h5>
-                                <p class="card-text">We have a pallet of 5-7 Fig hardwood, available for purchase now! ...</p>
-                                <a href="article.php" class="btn btn-primary">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card shadow h-100">
-                            <img class="card-img-top" src="imgs/fig-8-4-resized.jpg">
-                            <div class="p-3">
-                                <h5 class="card-title">New 8-4 Fig in Stock</h5>
-                                <p class="card-text">We have a pallet of 8-4 Fig hardwood, available for purchase now! ...</p>
-                                <a href="article.php" class="btn btn-primary">Read more</a>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="display-4">News</h2>
+                <p class="lead">Check out our latest info from social media.</p>
+                <div class="mx-auto border rounded-3 shadow p-3" style="max-width: 600px;">
+                    <!-- Start Twitter Embed -->
+                    <a class="twitter-timeline" data-height="600" data-dnt="true" href="https://twitter.com/mphwood?ref_src=twsrc%5Etfw">Tweets by mphwood</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <!-- End Twitter Embed -->
                 </div>
             </div>
         </main>
