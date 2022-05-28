@@ -34,16 +34,13 @@
             </ul>
             <ul class="navbar-nav flex-row nav-social me-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i role="img" class="bi bi-facebook fs-5" aria-label="Facebook"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/MillerPacific"><i role="img" class="bi bi-facebook fs-5" aria-label="Facebook"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i role="img" class="bi bi-twitter fs-5" aria-label="Twitter"></i></a>
+                    <a class="nav-link" href="https://twitter.com/mphwood"><i role="img" class="bi bi-twitter fs-5" aria-label="Twitter"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i role="img" class="bi bi-instagram fs-5" aria-label="Instagram"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i role="img" class="bi bi-youtube fs-5" aria-label="YouTube"></i></a>
+                    <a class="nav-link" href="https://instagram.com/mphwood"><i role="img" class="bi bi-instagram fs-5" aria-label="Instagram"></i></a>
                 </li>
             </ul>
         </div>
