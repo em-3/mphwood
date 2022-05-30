@@ -35,7 +35,7 @@
             <div class="container my-5">
                 <h2 class="display-4">Projects</h2>
                 <p class="lead">From small residential installations to corporate offices, we have supplied high-quality wood for a wide variety of projects.</p>
-                <p><a href="catalog.html" class="btn btn-primary">Check out our catalog</a></p>
+                <p><a href="products.html" class="btn btn-primary">Check out our products</a></p>
                 <div class="mx-auto p-4 border rounded-3 shadow" style="max-width: 600px !important;">
                     <div id="woodExamplesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                         <div class="carousel-indicators">

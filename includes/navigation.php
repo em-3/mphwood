@@ -16,7 +16,7 @@
 
                 $nav_items = [
                     "Home" => "index.php",
-                    "Catalog" => "catalog.php",
+                    "Products" => "products.php",
                     "About" => "about.php"
                 ];
 
