@@ -8,37 +8,18 @@
         let cardImage = document.createElement("img");
         let cardBody = document.createElement("div");
         let cardTitle = document.createElement("h5");
+        let stockLabel = document.createElement("span");
 
         //Set the classes of the elements
         column.classList.add("col-md-4");
-        card.classList.add("card");
-        card.classList.add("h-100");
+        card.classList.add("card", "h100");
         cardImage.classList.add("card-img-top");
         cardBody.classList.add("card-body");
-        cardTitle.classList.add("card-title");
-
-        cardImage.src = "imgs/" + product.image;
-        cardTitle.innerText = product.name + " ";
-
-        //Determine the stock label
-        let stockLabel = document.createElement("span");
+        cardTitle.classList.add("card-title", "d-flex", "justify-content-between");
         stockLabel.classList.add("badge");
 
-        if(product.inStock) {
-            if(product.qty > 0) {
-                stockLabel.classList.add("bg-success");
-                stockLabel.innerText = product.qty + " in Stock";
-            }else if(product.requestOnly) {
-                stockLabel.classList.add("bg-warning");
-                stockLabel.innerText = "Request Only";
-            }else {
-                stockLabel.classList.add("bg-success");
-                stockLabel.innerText = "In Stock";
-            }
-        }else {
-            stockLabel.classList.add("bg-danger");
-            stockLabel.innerText = "Out of Stock";
-        }
+        cardImage.src = "imgs/" + product.image;
+        cardTitle.innerText = product.name;
 
         //Assemble the product listing
         column.appendChild(card);
@@ -55,6 +36,23 @@
             cardBody.appendChild(cardText);
         }
 
+        //Determine the stock label
+        if(product.inStock) {
+            if(product.qty > 0) {
+                stockLabel.classList.add("bg-success");
+                stockLabel.innerText = product.qty + " in Stock";
+            }else if(product.requestOnly) {
+                stockLabel.classList.add("bg-warning");
+                stockLabel.innerText = "Request Only";
+            }else {
+                stockLabel.classList.add("bg-success");
+                stockLabel.innerText = "In Stock";
+            }
+        }else {
+            stockLabel.classList.add("bg-danger");
+            stockLabel.innerText = "Out of Stock";
+        }
+        
         return column;
     }
 
