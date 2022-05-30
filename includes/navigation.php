@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand text-wrap overflow-hidden" href="#">
+        <a class="navbar-brand text-wrap overflow-hidden" href="index.php">
             <img src="imgs/logo.svg" alt="" height="75" class="d-inline-block align-text-center" aria-hidden="false">
             <span class="text-nowrap">Miller Pacific Hardwoods</span>
         </a>
