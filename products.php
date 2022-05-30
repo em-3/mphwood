@@ -36,6 +36,11 @@
                 <p class="lead">We provide a range of slabs and handcrafted wood products like cutting boards.</p>
                 <div class="row g-3" id="other-products"></div>
             </div>
+            <div class="container my-5">
+                <p class="lead">Is the product you want not in stock? Follow us on Twitter to receive updates when we have new stock available.</p>
+                <a href="https://twitter.com/mphwood?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-dnt="true" data-show-count="false">Follow @mphwood</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </main>
         <!-- End Main Body -->
         <!-- Begin Footer -->
