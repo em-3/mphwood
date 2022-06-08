@@ -58,7 +58,7 @@
                         </div>
                         <div class="col-md-8">
                             <h3>Potting Bench and Privacy Wall</h3>
-                            <p>This potting bench was made using our western red cedar in {DATE}. In addition, we provided the cedar used to make the privacy wall behind the bench.</p>
+                            <p>This potting bench was made using our western red cedar. In addition, we provided the cedar used to make the privacy wall behind the bench.</p>
                         </div>
                     </div>
                 </div>
