@@ -10,6 +10,24 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="main.css">
+        <script src="products.js"></script>
+        <script>
+            (async () => {
+                await new Promise((resolve) => window.addEventListener("load", resolve));
+
+                //Get the list of products
+                let products = await getProductsList();
+
+                let latestProducts = document.getElementById("latest-products");
+
+                let combinedProducts = products.species.concat(products.other);
+                combinedProducts = combinedProducts.filter(product => product.inStock);
+
+                for(let i = 0; i < 3; i++) {
+                    latestProducts.appendChild(makeProductListing(combinedProducts[i]));
+                }
+            })();
+        </script>
     </head>
     <body>
         <!-- Begin Nav -->
@@ -33,9 +51,9 @@
                 </div>
             </div>
             <div class="container my-5">
-                <h2 class="display-4">Projects</h2>
-                <p class="lead">From small residential installations to corporate offices, we have supplied high-quality wood for a wide variety of projects.</p>
-                <p><a href="products.html" class="btn btn-primary">Check out our products</a></p>
+                <h2 class="display-4">About Us</h2>
+                <p class="lead">From small residential installations to corporate offices, we have supplied high-quality wood for a wide variety of projects and customers.</p>
+                <p><a href="about.php" class="btn btn-primary">Learn more</a></p>
                 <div class="mx-auto p-4 border rounded-3 shadow" style="max-width: 600px !important;">
                     <div id="woodExamplesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                         <div class="carousel-indicators">
@@ -76,6 +94,12 @@
                         </button>
                     </div>
                 </div>
+            </div>
+            <div class="container my-5">
+                <h2 class="display-4">Products</h2>
+                <p class="lead">Explore the different species of wood we have to offer.</p>
+                <p><a href="products.php" class="btn btn-primary">View Products</a></p>
+                <div class="row g-3" id="latest-products"></div>
             </div>
             <div class="container my-5">
                 <h2 class="display-4">News</h2>
