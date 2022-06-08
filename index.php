@@ -105,7 +105,7 @@
                 <h2 class="display-4">Products</h2>
                 <p class="lead">Explore the different species of wood we have to offer.</p>
                 <p><a href="products.php" class="btn btn-primary">View Products</a></p>
-                <div class="row g-3" id="latest-products"></div>
+                <div class="row g-3 justify-content-center" id="latest-products"></div>
             </div>
             <div class="container my-5">
                 <h2 class="display-4">News</h2>

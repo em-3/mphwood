@@ -59,12 +59,12 @@
             <div class="container my-5">
                 <h2 class="display-5">Wood Species</h2>
                 <p class="lead">We routinely carry the following species of wood. For more information about a type of wood, please contact us.</p>
-                <div class="row g-3" id="wood-species"></div>
+                <div class="row g-3 justify-content-center" id="wood-species"></div>
             </div>
             <div class="container my-5">
                 <h2 class="display-5">Slabs and Wood Products</h2>
                 <p class="lead">We provide a range of slabs and handcrafted wood products like cutting boards.</p>
-                <div class="row g-3" id="other-products"></div>
+                <div class="row g-3 justify-content-center" id="other-products"></div>
             </div>
             <div class="container my-5">
                 <p class="lead">Is the product you want not in stock? Follow us on Twitter to receive updates when we have new stock available.</p>
