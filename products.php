@@ -21,14 +21,23 @@
                 let woodSpecies = document.getElementById("wood-species");
                 let otherProducts = document.getElementById("other-products");
 
-                //Generate the list of wood species
-                for(let product of products.species) {
-                    woodSpecies.appendChild(makeProductListing(product));
-                }
+                if(products.error) {
+                    //Generate the error message twice in order to show it for both sections
+                    let errorSpecies = generateErrorMessage();
+                    let errorProducts = generateErrorMessage();
 
-                //Generate the list of other products
-                for(let product of products.other) {
-                    otherProducts.appendChild(makeProductListing(product));
+                    woodSpecies.appendChild(errorSpecies);
+                    otherProducts.appendChild(errorProducts);
+                }else {
+                    //Generate the list of wood species
+                    for(let product of products.species) {
+                        woodSpecies.appendChild(makeProductListing(product));
+                    }
+
+                    //Generate the list of other products
+                    for(let product of products.other) {
+                        otherProducts.appendChild(makeProductListing(product));
+                    }
                 }
             })();
         </script>

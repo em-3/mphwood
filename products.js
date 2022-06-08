@@ -49,12 +49,39 @@ function makeProductListing(product) {
         stockLabel.classList.add("bg-danger");
         stockLabel.innerText = "Out of Stock";
     }
+
+    cardImage.addEventListener("error", () => column.remove());
     
     return column;
 }
 
 async function getProductsList() {
-    let products = await fetch("products.json");
-    products = await products.json();
-    return products;
+    return fetch("products.json").then(response => {
+        if(response.ok) {
+            return response.json();
+        }
+        
+        return Promise.reject(response.statusText);
+    }, error => {
+        return Promise.reject(error);
+    }).then(data => {
+        return data;
+    }, error => {
+        return Promise.resolve({
+            error: {
+                message: "Could not load products",
+                obj: error
+            }
+        });
+    });
+}
+
+function generateErrorMessage() {
+    let error = document.createElement("div");
+    let errorText = document.createElement("p");
+    errorText.innerText = "Oh no! Something went wrong on our end and we couldn't load the products list. Please try again later.";
+    error.classList.add("col-md-4", "text-center");
+    error.appendChild(errorText);
+
+    return error;
 }

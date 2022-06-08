@@ -20,11 +20,17 @@
 
                 let latestProducts = document.getElementById("latest-products");
 
-                let combinedProducts = products.species.concat(products.other);
-                combinedProducts = combinedProducts.filter(product => product.inStock);
+                if(products.error) {
+                    let error = generateErrorMessage();
 
-                for(let i = 0; i < 3; i++) {
-                    latestProducts.appendChild(makeProductListing(combinedProducts[i]));
+                    latestProducts.appendChild(error);
+                }else {
+                    let combinedProducts = products.species.concat(products.other);
+                    combinedProducts = combinedProducts.filter(product => product.inStock);
+
+                    for(let i = 0; i < 3; i++) {
+                        latestProducts.appendChild(makeProductListing(combinedProducts[i]));
+                    }
                 }
             })();
         </script>
