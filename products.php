@@ -10,7 +10,28 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="main.css">
-        <script src="products.js" async></script>
+        <script src="products.js"></script>
+        <script>
+            (async () => {
+                await new Promise((resolve) => window.addEventListener("load", resolve));
+
+                //Get the list of products
+                let products = await getProductsList();
+
+                let woodSpecies = document.getElementById("wood-species");
+                let otherProducts = document.getElementById("other-products");
+
+                //Generate the list of wood species
+                for(let product of products.species) {
+                    woodSpecies.appendChild(makeProductListing(product));
+                }
+
+                //Generate the list of other products
+                for(let product of products.other) {
+                    otherProducts.appendChild(makeProductListing(product));
+                }
+            })();
+        </script>
     </head>
     <body>
         <!-- Begin Nav -->
