@@ -48,8 +48,8 @@
             <div class="container my-5">
                 <div class="row p-4 g-3 border rounded-3 shadow align-items-center">
                     <div class="col-lg-6">
-                        <h1 class="display-3">We Provide High-Quality Lumber</h1>
-                        <p class="lead">Miller Pacific Hardwoods has been in business since 2002, and only deals in high-quality lumber. We guarantee only the best lumber for your projects.</p>
+                        <h1 class="display-3">Providing Quality Hardwood Since 2002</h1>
+                        <p class="lead">Miller Pacific Hardwoods LLC is a small, family-operated hardwood business in the Pacific Northwest. We mill and sell furniture-grade lumber and custom wood products for special projects. We specialize in slabs for tables, countertops, island tops, and mantles.</p>
                     </div>
                     <div class="col-lg-6">
                         <img class="img-fluid" src="imgs/sign.jpg">
