@@ -21,11 +21,19 @@
         <!-- End Nav -->
         <!-- Begin Main Body -->
         <main>
+            <div class="container my-5">
+                <h1 class="display-3">About Us</h1>
+                <p class="lead">Providing Quality Hardwood Since 2002</p>
+                <p>Miller Pacific Hardwoods LLC is a small, family-operated hardwood business in the Pacific Northwest. We mill and sell furniture-grade lumber and custom wood products for special projects. We specialize in slabs for tables, countertops, island tops, and mantles. For over 20 years, our sales have been through word of mouth. We do not have regular business hours, so it is best to contact us by phone or email to make an appointment.</p>
+                <p>
+                    <a href="mailto:contact@mphwood.com" class="btn btn-primary">Contact Us</a>
+                </p>
+            </div>
             <section>
                 <div class="container my-5">
                     <h2 class="display-4">Customers and Projects</h2>
                     <p class="lead">We have provided high-quality hardwood to many different customers for all kinds of projects. Check out some of the ways our wood has been used below</p>
-                    <div class="row g-3 align-items-center">
+                    <div class="row g-4 align-items-center">
                         <div class="col-md-4">
                             <img class="img-fluid w-100" src="imgs/stairs-resized.jpg" alt="An office with a staircase made with our hardwood">
                         </div>
@@ -34,7 +42,7 @@
                             <p>This beautiful staircase is in WATG's Irvine, California office. We provided the hardwood used to construct it in 2011.</p>
                         </div>
                     </div>
-                    <div class="row g-3 flex-md-row-reverse text-md-end align-items-center">
+                    <div class="row g-4 flex-md-row-reverse text-md-end align-items-center">
                         <div class="col-md-4">
                             <img class="img-fluid w-100" src="imgs/pergola-resized.jpg" alt="A pergola made of redwood">
                         </div>
@@ -43,7 +51,7 @@
                             <p>This DIY pergola was built in Eagle, Idaho in 2020. We milled and supplied the redwood used in this beautiful project.</p>
                         </div>
                     </div>
-                    <div class="row g-3 align-items-center">
+                    <div class="row g-4 align-items-center">
                         <div class="col-md-4">
                             <img class="img-fluid w-100" src="imgs/kitchen-counter-resized.jpg" alt="A kitchen counter made of a single slab of wood">
                         </div>
@@ -52,7 +60,7 @@
                             <p>This kitchen counter was installed in 2021 in eastern Montana. It is made of a beautiful single piece of 2 inch thick black walnut that we provided.</p>
                         </div>
                     </div>
-                    <div class="row g-3 flex-md-row-reverse text-md-end align-items-center">
+                    <div class="row g-4 flex-md-row-reverse text-md-end align-items-center">
                         <div class="col-md-4">
                             <img class="img-fluid w-100" src="imgs/potting-bench-resized.jpg" alt="A potting bench with four plants on it, in front of a redwood privacy wall">
                         </div>
