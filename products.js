@@ -8,12 +8,12 @@ function makeProductListing(product) {
     let stockLabel = document.createElement("span");
 
     //Set the classes of the elements
-    column.classList.add("col-md-4");
+    column.classList.add("col-md-3");
     card.classList.add("card", "h-100");
     cardImage.classList.add("card-img-top");
     cardBody.classList.add("card-body");
-    cardTitle.classList.add("card-title", "d-flex", "justify-content-between");
-    stockLabel.classList.add("badge");
+    cardTitle.classList.add("card-title", "d-flex", "justify-content-between", "gap-3");
+    stockLabel.classList.add("badge", "h-100");
 
     cardImage.src = "imgs/" + product.image;
     cardTitle.innerText = product.name;
