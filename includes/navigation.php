@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md bg-light">
+<nav class="navbar navbar-expand-md navbar-dark bg-wood">
     <div class="container-fluid">
         <a class="navbar-brand text-wrap overflow-hidden" href="index.php">
-            <img src="imgs/logo.svg" alt="" height="75" class="d-inline-block align-text-center" aria-hidden="false">
+            <img src="imgs/logo-dark.svg" alt="" height="75" class="d-inline-block align-text-center" aria-hidden="false">
             <span class="text-nowrap">Miller Pacific Hardwoods</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
