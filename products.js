@@ -8,7 +8,7 @@ function makeProductListing(product) {
     let stockLabel = document.createElement("span");
 
     //Set the classes of the elements
-    column.classList.add("col-md-3");
+    column.classList.add("col-lg-3", "col-md-4", "col-sm-6");
     card.classList.add("card", "h-100");
     cardImage.classList.add("card-img-top");
     cardBody.classList.add("card-body");
