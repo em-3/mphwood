@@ -41,6 +41,9 @@ function makeProductListing(product) {
         }else if(product.requestOnly) {
             stockLabel.classList.add("bg-warning");
             stockLabel.innerText = "Request Only";
+        }else if(product.limitedStock) {
+            stockLabel.classList.add("bg-warning");
+            stockLabel.innerText = "Limited Stock";
         }else {
             stockLabel.classList.add("bg-success");
             stockLabel.innerText = "In Stock";
