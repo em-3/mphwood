@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About - MPH Wood</title>
+        <?php include "includes/meta-tags.html"; ?>
         <link rel="icon" type="image/png" sizes="32x32" href="imgs/icon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="imgs/icon-16x16.png">
 
