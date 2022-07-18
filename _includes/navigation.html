@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-wood">
     <div class="container-fluid">
-        <a class="navbar-brand text-wrap overflow-hidden" href="index.php">
+        <a class="navbar-brand text-wrap overflow-hidden" href="index.html">
             <img src="imgs/logo-dark.svg" alt="" height="75" class="d-inline-block align-text-center" aria-hidden="false">
             <span class="text-nowrap">Miller Pacific Hardwoods</span>
         </a>
@@ -9,28 +9,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto">
-                <?php
-                if(!isset($active_page)) {
-                    throw new Exception('$active_page is not set');
-                }
-
-                $nav_items = [
-                    "Home" => "index.php",
-                    "Products" => "products.php",
-                    "About" => "about.php"
-                ];
-
-
-                foreach($nav_items as $key=>$value) {
-                    echo "<li class='nav-item'>";
-                    if($active_page == $value) {
-                        echo "<a class='nav-link active' aria-current='page' href='$value'>$key</a>";
-                    }else {
-                        echo "<a class='nav-link' href='$value'>$key</a>";
-                    }
-                    echo "</li>";
-                }
-                ?>
+                <li class="nav-item">
+                    {% if include.page == "index.html" %}
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    {% else %}
+                    <a href="index.html" class="nav-link">Home</a>
+                    {% endif %}
+                </li>
+                <li class="nav-item">
+                    {% if include.page == "products.html" %}
+                    <a href="products.html" class="nav-link active" aria-current="page">Products</a>
+                    {% else %}
+                    <a href="products.html" class="nav-link">Products</a>
+                    {% endif %}
+                </li>
+                <li class="nav-item">
+                    {% if include.page == "about.html" %}
+                    <a href="about.html" class="nav-link active" aria-current="page">About</a>
+                    {% else %}
+                    <a href="about.html" class="nav-link">About</a>
+                    {% endif %}
+                </li>
             </ul>
             <ul class="navbar-nav flex-row nav-social me-3">
                 <li class="nav-item">
