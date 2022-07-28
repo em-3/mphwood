@@ -1,0 +1,126 @@
+{
+    "species": [
+        {
+            "name": "American Brown Elm",
+            "image": "species/american-brown-elm.jpg",
+            "inStock": true
+        },
+        {
+            "name": "American Chestnut",
+            "image": "species/american-chestnut.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Ash",
+            "image": "species/ash.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Beech",
+            "image": "species/beech.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Black Locust",
+            "image": "species/black-locust.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Catapla",
+            "image": "species/catapla.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Cedar of Lebanon",
+            "image": "species/cedar-of-lebanon.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Cherry",
+            "image": "species/cherry.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Douglas Fir",
+            "image": "species/douglas-fir.jpg",
+            "inStock": true
+        },
+        {
+            "name": "English Walnut",
+            "image": "species/english-walnut.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Fiddleback Figured Maple",
+            "image": "species/fiddleback-figured-maple.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Highly Figured Maple",
+            "description": "This maple, with its intricate figuring, is perfect for small projects such as jewelry boxes.",
+            "image": "species/highly-figured-maple.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Marbled Black Walnut",
+            "image": "species/marbled-black-walnut.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Mulberry",
+            "image": "species/mulberry.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Myrtle",
+            "image": "species/myrtle.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Pacific Yew",
+            "image": "species/pacific-yew.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Red Alder",
+            "image": "species/red-alder.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Spalted Black Line Maple",
+            "image": "species/spalted-black-line-maple.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Western Broad Leaf Maple",
+            "image": "species/western-broad-leaf-maple.jpg",
+            "inStock": true
+        },
+        {
+            "name": "Western Red Cedar",
+            "image": "species/western-red-cedar.jpg",
+            "inStock": true
+        },
+        {
+            "name": "White Oak",
+            "image": "species/white-oak.jpg",
+            "inStock": true
+        }
+    ],
+    "other": [
+        {
+            "name": "Charcuterie Board",
+            "description": "Each of these hand-crafted charcuterie boards are one-of-a-kind, and made with only the finest black walnut.\nAvailable at the Columbia Gorge Interpretative Center in Stevenson, Washington.",
+            "image": "cutting-board-resized.jpg",
+            "inStock": true,
+            "limitedStock": true
+        },
+        {
+            "name": "Treadle Table",
+            "description": "These tables which are made from a Treadle sewing machine stand and some of our best black walnut.\nAvailable at Moon River Home and Living in Stevenson, Washington.",
+            "image": "treadle-table-resized.jpg",
+            "inStock": true,
+            "limitedStock": true
+        }
+    ]
+}
