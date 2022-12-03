@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    --primary-color: #000000;
+    --background-color: #ffffff;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+#app {
+    padding: 25px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        --primary-color: #ffffff;
+        --background-color: #000000;
+    }
+}
