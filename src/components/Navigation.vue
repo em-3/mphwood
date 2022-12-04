@@ -28,7 +28,7 @@ import NavLink from "./NavLink.vue"
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin: 25px;
     }
 
     #navigation .logo {

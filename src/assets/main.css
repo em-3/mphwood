@@ -15,9 +15,9 @@ body {
     background-color: var(--background-color);
 }
 
-#app {
+/* #app {
     padding: 25px;
-}
+} */
 
 h1 {
     font-size: 2.5em;
@@ -29,6 +29,19 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+}
+
+.centered {
+    padding-left: max(calc((100vw - 1280px) / 2), 25px);
+    padding-right: max(calc((100vw - 1280px) / 2), 25px);
+}
+
+.wood-background {
+    background-image: url(imgs/wood-bg.jpg);
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
 }
 
 @media (prefers-color-scheme: dark) {
