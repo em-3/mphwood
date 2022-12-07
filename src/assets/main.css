@@ -32,10 +32,10 @@ h3 {
     font-size: 1.5em;
 }
 
-.centered {
+/* .centered {
     padding-left: max(calc((100vw - 1280px) / 2), 25px);
     padding-right: max(calc((100vw - 1280px) / 2), 25px);
-}
+} */
 
 .wood-background {
     background-image: url(imgs/wood-bg.jpg);
@@ -43,6 +43,12 @@ h3 {
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
+}
+
+.centered, .wood-background .content {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .buttonLink {
