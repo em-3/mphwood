@@ -1,7 +1,7 @@
 <script setup>
 
 import { ref } from "vue"
-import Image from "@/components/gallery/Image.vue"
+import GalleryImage from "@/components/gallery/GalleryImage.vue"
 
 const props = defineProps(["images"])
 
@@ -9,7 +9,7 @@ const props = defineProps(["images"])
 
 <template>
     <div class="imageGrid">
-        <Image v-for="image in images" :src="image.src" :title="image.title" :description="image.description" />
+        <GalleryImage v-for="image in images" :src="image.src" :title="image.title" :description="image.description" />
     </div>
 </template>
 
