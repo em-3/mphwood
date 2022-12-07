@@ -8,7 +8,7 @@ const props = defineProps(["images"])
 </script>
 
 <template>
-    <div class="imageGrid centered">
+    <div class="imageGrid">
         <Image v-for="image in images" :src="image.src" :title="image.title" :description="image.description" />
     </div>
 </template>

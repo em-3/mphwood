@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     --primary-color: #000000;
+    --secondary-color: #919191;
     --background-color: #ffffff;
 }
 
@@ -44,9 +45,20 @@ h3 {
     color: white;
 }
 
+.buttonLink {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 12px;
+    border-radius: 10px;
+    font: inherit;
+}
+
 @media (prefers-color-scheme: dark) {
     * {
         --primary-color: #ffffff;
+        --secondary-color: #414141;
         --background-color: #000000;
     }
 }
