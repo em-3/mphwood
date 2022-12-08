@@ -1,5 +1,4 @@
-/_site/
-/.jekyll-cache/
+old/
 
 # Logs
 logs
@@ -16,9 +15,6 @@ dist
 dist-ssr
 coverage
 *.local
-
-/cypress/videos/
-/cypress/screenshots/
 
 # Editor directories and files
 .vscode/*
