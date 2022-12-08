@@ -2,28 +2,29 @@
 
 import { Transition } from "vue"
 import { RouterView } from "vue-router"
-import Navigation from "@/components/Navigation.vue"
+import Navigation from "@/components/navigation/Navigation.vue"
+import Footer from "@/components/Footer.vue"
 
 </script>
 
 <template>
   <Navigation></Navigation>
 
-  <div class="contentContainer">
+  <div id="viewContainer">
     <RouterView v-slot="{ Component }">
       <Transition name="slide-fade" mode="out-in">
         <Component :is="Component" />
       </Transition>
     </RouterView>
   </div>
+
+  <Footer></Footer>
 </template>
 
 <style>
-  /* .contentContainer {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1280px;
-  } */
+  #viewContainer {
+    margin-bottom: 50px;
+  }
 
   .slide-fade-enter-active,
   .slide-fade-leave-active {
@@ -38,12 +39,5 @@ import Navigation from "@/components/Navigation.vue"
   .slide-fade-enter-from {
     transform: translateY(-30px);
     opacity: 0;
-  }
-
-  @media (width < 1024px) {
-    .contentContainer {
-      margin: 0;
-      max-width: 100%;
-    }
   }
 </style>

@@ -12,7 +12,7 @@ const images = ref(imageData)
 <template>
     <div>
         <header class="wood-background">
-            <div class="content">
+            <div class="content fancy">
                 <div>
                     <h1>Providing Quality Hardwood Since 2002</h1>
                     <p>Miller Pacific Hardwoods LLC is a small, family-operated hardwood business in the Pacific Northwest. We mill and sell furniture-grade lumber and custom wood products for special projects. We specialize in slabs for tables, countertops, island tops, and mantles.</p>
