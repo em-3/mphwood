@@ -15,7 +15,6 @@ const props = defineProps(["images"])
 
 <style>
     .imageGrid {
-        margin: 50px;
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 10pt;

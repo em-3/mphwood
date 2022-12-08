@@ -31,25 +31,25 @@ const images = ref(imageData)
 </template>
 
 <style>
-    header {
+    header .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 25pt;
     }
 
-    header .sign {
+    header .content .sign {
         border-radius: 25px;
         max-width: 650px;
         width: 100%;
     }
 
     @media (width < 1024px) {
-        header {
+        header .content {
             flex-direction: column-reverse;
         }
 
-        header .sign {
+        header .content .sign {
             max-width: 500px;
         }
     }
