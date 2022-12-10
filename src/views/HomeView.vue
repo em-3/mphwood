@@ -21,7 +21,7 @@ const images = ref(imageData)
                 <img src="imgs/sign.jpg" class="sign" />
             </div>
         </header>
-        <div class="about centered">
+        <div class="centered">
             <h2>About Us</h2>
             <p>From small residential installations to corporate offices, we have supplied high-quality wood for a wide variety of projects and customers.</p>
             <p><RouterLink :to="{name: 'about'}" class="buttonLink">Learn More</RouterLink></p>

@@ -36,6 +36,15 @@ h4 {
     font-size: 1.25em;
 }
 
+.heading {
+    margin-bottom: 0.1em;
+}
+
+.subheading {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
 /* .centered {
     padding-left: max(calc((100vw - 1280px) / 2), 25px);
     padding-right: max(calc((100vw - 1280px) / 2), 25px);
