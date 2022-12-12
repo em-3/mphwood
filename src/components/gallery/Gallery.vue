@@ -20,13 +20,13 @@ const props = defineProps(["images"])
         gap: 10pt;
     }
 
-    @media (width < 1024px) {
+    @media (max-width: 1024px) {
         .imageGrid {
             grid-template-columns: auto auto;
         }
     }
 
-    @media (width < 750px) {
+    @media (max-width: 750px) {
         .imageGrid {
             grid-template-columns: auto;
         }

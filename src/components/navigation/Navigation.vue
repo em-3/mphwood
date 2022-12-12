@@ -51,7 +51,7 @@ import NavLink from "./NavLink.vue"
 
     }
 
-    @media (width < 1024px) {
+    @media (max-width: 750px) {
         #navigation {
             flex-direction: column;
         }

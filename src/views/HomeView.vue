@@ -45,7 +45,7 @@ const images = ref(imageData)
         width: 50vw;
     }
 
-    @media (width < 1024px) {
+    @media (max-width: 750px) {
         header .content {
             flex-direction: column-reverse;
         }
