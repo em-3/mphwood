@@ -4,6 +4,8 @@ import { ref, computed } from "vue"
 
 const props = defineProps(["src", "title", "description"])
 
+const imageURL = new URL(`../../assets/imgs/${props.src}.jpg`, import.meta.url).href
+
 const hasContent = computed(() => {
     return props.title || props.description
 })
@@ -12,11 +14,11 @@ const hasContent = computed(() => {
 
 <template>
     <div class="imageCard">
-        <img :src="'imgs/' + src"/>
+        <img :src="imageURL"/>
         <div class="contentContainer" v-if="hasContent">
             <div class="content">
-                <h3>{{ title }}</h3>
-                <p>{{ description }}</p>
+                <h3 class="heading">{{ title }}</h3>
+                <p class="after-heading">{{ description }}</p>
             </div>
         </div>
     </div>

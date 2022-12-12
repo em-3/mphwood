@@ -8,7 +8,7 @@ import { RouterLink } from "vue-router"
 <template>
     <div class="wood-background">
         <div class="content">
-            <h4>Miller Pacific Hardwoods</h4>
+            <h4 class="subheading">Miller Pacific Hardwoods</h4>
             <nav id="footerNavigation">
                 <RouterLink :to="{name: 'home'}">Home</RouterLink>
                 <RouterLink :to="{name: 'products'}">Products</RouterLink>

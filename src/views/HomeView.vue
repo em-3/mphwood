@@ -14,16 +14,16 @@ const images = ref(imageData)
         <header class="wood-background">
             <div class="content fancy">
                 <div>
-                    <h1>Providing Quality Hardwood Since 2002</h1>
-                    <p>Miller Pacific Hardwoods LLC is a small, family-operated hardwood business in the Pacific Northwest. We mill and sell furniture-grade lumber and custom wood products for special projects. We specialize in slabs for tables, countertops, island tops, and mantles.</p>
+                    <h1 class="heading">Providing Quality Hardwood Since 2002</h1>
+                    <p class="after-heading">Miller Pacific Hardwoods LLC is a small, family-operated hardwood business in the Pacific Northwest. We mill and sell furniture-grade lumber and custom wood products for special projects. We specialize in slabs for tables, countertops, island tops, and mantles.</p>
                     <p><a href="tel:503-449-2068" class="buttonLink">Give us a call</a></p>
                 </div>
-                <img src="imgs/sign.jpg" class="sign" />
+                <img src="@/assets/imgs/sign.jpg" class="sign" />
             </div>
         </header>
         <div class="centered">
-            <h2>About Us</h2>
-            <p>From small residential installations to corporate offices, we have supplied high-quality wood for a wide variety of projects and customers.</p>
+            <h2 class="heading">About Us</h2>
+            <p class="after-heading">From small residential installations to corporate offices, we have supplied high-quality wood for a wide variety of projects and customers.</p>
             <p><RouterLink :to="{name: 'about'}" class="buttonLink">Learn More</RouterLink></p>
         </div>
         <Gallery :images="images" class="centered"></Gallery>
@@ -34,14 +34,15 @@ const images = ref(imageData)
     header .content {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 25pt;
     }
 
     header .content .sign {
+        display: block;
         border-radius: 25px;
         max-width: 650px;
-        width: 100%;
+        width: 50vw;
     }
 
     @media (width < 1024px) {
@@ -51,6 +52,7 @@ const images = ref(imageData)
 
         header .content .sign {
             max-width: 500px;
+            width: 100%;
         }
     }
 </style>
