@@ -4,7 +4,9 @@ import { ref, computed } from "vue"
 
 const props = defineProps(["src", "title", "description"])
 
-const imageURL = new URL(`../../assets/imgs/${props.src}.jpg`, import.meta.url).href
+const avifImageURL = new URL(`../../assets/imgs/${props.src}.avif`, import.meta.url).href
+const webpImageURL = new URL(`../../assets/imgs/${props.src}.webp`, import.meta.url).href
+const fallbackImageURL = new URL(`../../assets/imgs/${props.src}.jpg`, import.meta.url).href
 
 const hasContent = computed(() => {
     return props.title || props.description
@@ -14,7 +16,11 @@ const hasContent = computed(() => {
 
 <template>
     <div class="imageCard">
-        <img :src="imageURL"/>
+        <picture>
+            <source type="image/avif" :srcset="avifImageURL" />
+            <source type="image/webp" :srcset="webpImageURL" />
+            <img :src="fallbackImageURL" />
+        </picture>
         <div class="contentContainer" v-if="hasContent">
             <div class="content">
                 <h3 class="heading">{{ title }}</h3>
@@ -30,6 +36,7 @@ const hasContent = computed(() => {
         border-radius: 25px;
         overflow: hidden;
         color: white;
+        aspect-ratio: 1;
     }
 
     .imageCard img {

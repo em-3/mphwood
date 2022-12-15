@@ -55,7 +55,13 @@ h4 {
 } */
 
 .wood-background {
-    background-image: url(imgs/wood-bg.jpg);
+    background-image: url("@/assets/imgs/wood-bg.jpg");
+    background-image: url("@/assets/imgs/wood-bg.webp");
+    background-image: -webkit-image-set(
+        url("@/assets/imgs/wood-bg.avif") 1x type("image/avif"),
+        url("@/assets/imgs/wood-bg.webp") 1x type("image/webp"),
+        url("@/assets/imgs/wood-bg.jpg") 1x type("image/jpg")
+    );
     background-attachment: fixed;
     padding-top: 50px;
     padding-bottom: 50px;

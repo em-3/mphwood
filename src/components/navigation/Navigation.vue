@@ -11,7 +11,7 @@ import NavLink from "./NavLink.vue"
         <RouterLink :to="{name: 'home'}" class="logo">
             <picture>
                 <source srcset="@/assets/imgs/logo-dark.svg" media="(prefers-color-scheme: dark)" />
-                <img src="@/assets/imgs/logo.svg" />
+                <img src="@/assets/imgs/logo.svg" width="133" height="75" />
             </picture>
             <h3>Miller Pacific Hardwoods</h3>
         </RouterLink>
@@ -45,7 +45,7 @@ import NavLink from "./NavLink.vue"
         display: inline-block;
     }
 
-    #navigation .logo h2 {
+    #navigation .logo h3 {
         display: inline-block;
         margin: 0;
 
