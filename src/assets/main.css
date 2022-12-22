@@ -3,6 +3,8 @@
     --primary-color: #000000;
     --secondary-color: #255670;
     --background-color: #ffffff;
+    --secondary-background-color: #dddddd;
+    --shadow-color: #a8a8a8;
 }
 
 body, html {
@@ -15,10 +17,6 @@ body {
     color: var(--primary-color);
     background-color: var(--background-color);
 }
-
-/* #app {
-    padding: 25px;
-} */
 
 h1 {
     font-size: 2.5em;
@@ -49,15 +47,10 @@ h4 {
     margin-top: 0;
 }
 
-/* .centered {
-    padding-left: max(calc((100vw - 1280px) / 2), 25px);
-    padding-right: max(calc((100vw - 1280px) / 2), 25px);
-} */
-
 .wood-background {
     background-image: url("@/assets/imgs/wood-bg.jpg");
     background-image: url("@/assets/imgs/wood-bg.webp");
-    background-image: -webkit-image-set(
+    background-image: image-set(
         url("@/assets/imgs/wood-bg.avif") 1x type("image/avif"),
         url("@/assets/imgs/wood-bg.webp") 1x type("image/webp"),
         url("@/assets/imgs/wood-bg.jpg") 1x type("image/jpg")
@@ -90,6 +83,7 @@ h4 {
     padding: 12px;
     border-radius: 10px;
     font: inherit;
+    text-align: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -97,5 +91,7 @@ h4 {
         --primary-color: #ffffff;
         --secondary-color: #255670;
         --background-color: #000000;
+        --secondary-background-color: #1a1a1a;
+        --shadow-color: #262626;
     }
 }
