@@ -2,7 +2,7 @@
 
 This repository is the official codebase of the Miller Pacific Hardwoods' website.
 
-Made with ❤️ and [Bootstrap](https://getbootstrap.com).
+Made with ❤️ and [Vue.js](https://vuejs.org).
 
 ## Copyrights
 
