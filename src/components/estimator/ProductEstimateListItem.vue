@@ -64,6 +64,7 @@ function updateQTY(event) {
         color: var(--primary-color);
         background-color: var(--secondary-background-color);
         text-align: right;
+        border-radius: 0;
     }
 
     .product .price input:focus {
