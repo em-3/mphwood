@@ -12,17 +12,17 @@ const props = defineProps(["url"])
         <p class="after-heading">The URL: <span id="urlMonospaced">{{ url }}</span> doesn't lead to anything!</p>
         <h2>Suspect a Mistake?</h2>
         <p>Here's what you can try:</p>
-        <ul id="notFoundList">
-            <li>
-                Retype the URL
+        <dl id="notFoundList">
+            <dt>Retype the URL</dt>
+            <dd>
                 <ul>
                     <li>Sometimes typos in the address bar can result in this page being displayed</li>
                     <li>Check commonly mistaken letters such as i and L being swapped</li>
                     <li>You can <a href="javascript:window.history.back()">go back a page</a> and try to navigate to your destination again</li>
                 </ul>
-            </li>
-            <li>
-                Clear your cache
+            </dd>
+            <dt>Clear your cache</dt>
+            <dd>
                 <ul>
                     <li>This site uses dynamic routing, and if you use the page during a site update, your browser could get lost</li>
                     <li>
@@ -38,8 +38,8 @@ const props = defineProps(["url"])
                         </ul>
                     </li>
                 </ul>
-            </li>
-        </ul>
+            </dd>
+        </dl>
     </div>
 </template>
 
@@ -51,5 +51,9 @@ const props = defineProps(["url"])
 
     #notFoundList {
         line-height: 2em;
+    }
+
+    #notFoundList dt {
+        font-weight: bold;
     }
 </style>
