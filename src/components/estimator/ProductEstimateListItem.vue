@@ -70,8 +70,4 @@ function updateQTY(event) {
         outline: none;
         border-bottom-color: var(--secondary-color);
     }
-
-    .product a {
-        color: var(--primary-color);
-    }
 </style>
