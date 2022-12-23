@@ -30,14 +30,17 @@ const stockColor = computed(() => {
     return "#0a7c00"
 })
 
+const hasDescription = computed(() => props.description != undefined)
+const hasPrice = computed(() => props.price != undefined)
+
 </script>
 
 <template>
     <div class="productCard">
         <div class="image">
             <picture>
-                <!-- <source type="image/avif" :srcset="avifImageURL" /> -->
-                <!-- <source type="image/webp" :srcset="webpImageURL" /> -->
+                <source type="image/avif" :srcset="avifImageURL" />
+                <source type="image/webp" :srcset="webpImageURL" />
                 <img :src="fallbackImageURL" />
             </picture>
             <div class="imageContentContainer">
@@ -46,10 +49,13 @@ const stockColor = computed(() => {
         </div>
         <div class="content">
             <div class="stockLabel"><span :style="{ backgroundColor: stockColor }">{{ stockLabel }}</span></div>
-            <p class="description">{{ description }}</p>
-            <div class="contentFooter">
+            <p class="description" v-if="hasDescription">{{ description }}</p>
+            <div class="contentFooter" v-if="hasPrice">
                 <p class="price">${{ price }} / BFM</p>
                 <p><a href="javascript:void(0);" class="buttonLink" @click="$emit('addToEstimate', props.id)">Add to Estimate</a></p>
+            </div>
+            <div class="contentFooter" v-else>
+                <p class="price">Call for pricing</p>
             </div>
         </div>
     </div>
