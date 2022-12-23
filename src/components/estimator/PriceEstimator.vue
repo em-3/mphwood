@@ -38,7 +38,11 @@ const selectedProducts = ref({})
 const total = computed(() => {
     //For when someone (probably me) forgets how this works:
     //If there are no keys in selectedProducts, return 0. Otherwise, map the values of those keys to their estimates (produce an array containing only the estimate values), then sum them using reduce() and return that
-    return Object.keys(selectedProducts.value).length == 0 ? 0 : Object.values(selectedProducts.value).map(product => product.estimate).reduce((currentTotal, estimate) => currentTotal + estimate)
+    return hasProductsInEstimate.value ? Object.values(selectedProducts.value).map(product => product.estimate).reduce((currentTotal, estimate) => currentTotal + estimate) : 0
+})
+
+const hasProductsInEstimate = computed(() => {
+    return Object.keys(selectedProducts.value).length > 0
 })
 
 function addToEstimate(id) {
@@ -82,8 +86,13 @@ function removeFromEstimate(id) {
         <div :class="{ estimate: true, opened: estimateOpened }">
             <div class="mobileToggle" @click="estimateOpened = !estimateOpened"><span></span></div>
             <h2>Your Estimate</h2>
-            <div class="productsList">
+            <div class="productsList" v-if="hasProductsInEstimate">
                 <ProductEstimateListItem v-for="(product, id) in selectedProducts" :key="id" :id="id" :name="product.name" :price="product.price" v-model="product.estimate" @remove-from-estimate="removeFromEstimate"></ProductEstimateListItem>
+            </div>
+            <div class="productsList empty" v-else>
+                <span class="emptyEstimateIcon material-symbols-outlined">production_quantity_limits</span>
+                <h3>No items in estimate!</h3>
+                <p>Click "Add to Estimate" on any product to add it to your estimate!</p>
             </div>
             <div class="total">
                 <h3>Total: ${{ total }}</h3>
@@ -126,6 +135,7 @@ function removeFromEstimate(id) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 10pt;
         width: 25%;
         min-height: 50vh;
         max-height: 75vh;
@@ -135,7 +145,7 @@ function removeFromEstimate(id) {
         padding: 25px;
     }
 
-    #priceEstimator h2 {
+    #priceEstimator h2, h3 {
         margin: 0;
     }
 
@@ -146,6 +156,16 @@ function removeFromEstimate(id) {
         display: flex;
         flex-direction: column;
     }
+    
+    #priceEstimator .estimate .productsList.empty {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #priceEstimator .estimate .productsList .emptyEstimateIcon {
+        font-size: 50px;
+    }
 
     #priceEstimator .estimate .total .finePrint {
         font-size: 0.75em;
@@ -154,16 +174,17 @@ function removeFromEstimate(id) {
     #priceEstimator .estimate .mobileToggle {
         display: none;
         position: absolute;
-        top: 25px;
-        right: 25px;
-        width: 25px;
-        height: 25px;
-        align-items: center;
-        justify-content: center;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 50px;
         cursor: pointer;
     }
 
     #priceEstimator .estimate .mobileToggle>span {
+        position: absolute;
+        top: 35px;
+        right: 35px;
         display: inline-block;
         width: 10px;
         height: 10px;
