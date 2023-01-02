@@ -44,11 +44,13 @@ const hasPrice = computed(() => props.price != undefined)
                 <img :src="fallbackImageURL" />
             </picture>
             <div class="imageContentContainer">
-                <h3 class="content">{{ name }}</h3>
+                <div class="content">
+                    <h3>{{ name }}</h3>
+                    <div class="stockLabel"><span :style="{ backgroundColor: stockColor }">{{ stockLabel }}</span></div>
+                </div>
             </div>
         </div>
         <div class="content">
-            <div class="stockLabel"><span :style="{ backgroundColor: stockColor }">{{ stockLabel }}</span></div>
             <p class="description" v-if="hasDescription">{{ description }}</p>
             <div class="contentFooter" v-if="hasPrice">
                 <p class="price">${{ price }} / BFM</p>
@@ -98,6 +100,13 @@ const hasPrice = computed(() => props.price != undefined)
         color: white;
         padding: 20px;
         margin: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .productCard .image .imageContentContainer .content>h3 {
+        flex: 1;
     }
 
     .productCard>.content {
@@ -113,9 +122,11 @@ const hasPrice = computed(() => props.price != undefined)
         margin: 0;
     }
 
-    .productCard>.content .stockLabel {
-        display: flex;
-        justify-content: flex-end;
+    .productCard .stockLabel>span {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
     }
     
     .productCard>.content .contentFooter {
@@ -130,12 +141,5 @@ const hasPrice = computed(() => props.price != undefined)
 
     .productCard>.content .description {
         flex: 1;
-    }
-
-    .productCard>.content .stockLabel>span {
-        background-color: var(--secondary-color);
-        padding: 10px;
-        color: white;
-        border-radius: 10px;
     }
 </style>
