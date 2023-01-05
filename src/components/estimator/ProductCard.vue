@@ -57,7 +57,7 @@ const hasPrice = computed(() => props.price != undefined)
                 <p><a href="javascript:void(0);" class="buttonLink" @click="$emit('addToEstimate', props.id)">Add to Estimate</a></p>
             </div>
             <div class="contentFooter" v-else>
-                <p class="price">Call for pricing</p>
+                <p class="price"><a href="tel:503-449-2068" class="buttonLink">Call 503-449-2068 for pricing</a></p>
             </div>
         </div>
     </div>
