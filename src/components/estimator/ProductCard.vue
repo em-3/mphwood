@@ -113,7 +113,7 @@ const hasPrice = computed(() => props.price != undefined)
         display: flex;
         flex: 1;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
         gap: 10px;
         padding: 25px;
     }
